@@ -10,4 +10,11 @@ import { Message } from '@multi-teste/api-interfaces';
 export class AppComponent {
   hello$ = this.http.get<Message>('/api/hello');
   constructor(private http: HttpClient) {}
+
+  onClick() {
+    this.http.get('api/auth').subscribe((teste) => {
+      console.log(teste);
+    })
+  }
+
 }
