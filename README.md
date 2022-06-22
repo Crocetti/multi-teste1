@@ -13,10 +13,10 @@ npm install
 
 # Rodar aplicação 
 ```
-nx server multi 
+nx serve multi 
 ```
 
 # Rodar servidor
 ```
-nx server api
+nx serve api
 ```
